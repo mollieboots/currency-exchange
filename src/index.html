@@ -10,7 +10,23 @@
         <h1>Currency Exchange Converter</h1>
     </div>
     <div class="container">
-
+        <div class="form-group">
+            <input id="amount" name="dollars" class="form-control" type="number" placeholder="Enter amount of US currency you'd like to convert">
+            <select name="currency" id="currency" class="form-control">
+                <option value="EUR">EU Euro</option>
+                <option value="CNY">Japanese Yen</option>
+                <option value="GBP">Great British Pound</option>
+                <option value="AUS">Australian Dollar</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="CHF">Swiss Franc</option>
+                <option value="CNY">Chinese Renminbi</option>
+                <option value="SEK">Swedish Krona</option>
+                <option value="NZD">New Zealand Dollar</option>
+            </select>
+            <button class="btn btn-success" id="amountSubmit">Convert</button>
+        </div>
+        <div class="showResults"></div>
+        <div class="showErrors"></div>
     </div>
 </body>
 
